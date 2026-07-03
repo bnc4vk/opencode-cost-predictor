@@ -15,9 +15,18 @@ when available, with OpenCode session-cost rows retained as a real observed
 fallback. All data is bundled into the package at release time and resolved
 locally at runtime.
 
-## Install From npm
+## Install
 
-After publishing, add the TUI plugin to your OpenCode TUI config:
+Install globally into your OpenCode config:
+
+```sh
+opencode plugin opencode-cost-predictor -g
+```
+
+OpenCode installs npm plugins automatically on startup and caches packages under
+its own cache directory.
+
+For a project-local install, add the TUI plugin to `.opencode/tui.json`:
 
 ```json
 {
