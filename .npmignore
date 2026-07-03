@@ -1,7 +1,7 @@
+artifacts/
+tests/
+*.tgz
 .DS_Store
 node_modules/
 .opencode/node_modules/
-.opencode/package.json
 .opencode/package-lock.json
-artifacts/
-*.tgz

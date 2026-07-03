@@ -1,9 +1,44 @@
 {
-  "name": "coding-agent-cost-predictor",
+  "name": "opencode-cost-predictor",
   "version": "0.1.0",
-  "private": true,
+  "description": "OpenCode TUI plugin that displays local benchmark scores, token costs, and token efficiency on the home screen.",
+  "private": false,
   "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "model-benchmarks",
+    "coding-agent"
+  ],
+  "exports": {
+    ".": "./tui.tsx",
+    "./tui": "./tui.tsx"
+  },
+  "oc-plugin": [
+    "tui"
+  ],
+  "files": [
+    ".opencode/plugins",
+    ".opencode/README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "scripts",
+    "tui.tsx"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "update:scores": "node scripts/update-model-scores.mjs",
+    "pack:dry-run": "npm pack --dry-run"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.17.11",
+    "@opentui/solid": "^0.3.0",
+    "solid-js": "^1.9.10"
   }
 }
