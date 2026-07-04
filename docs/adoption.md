@@ -88,11 +88,18 @@ If your preferred model shows n/a, please open a missing-model issue with the ex
 
 Add links here as external steps are completed:
 
-- npm package:
-- GitHub release:
-- OpenCode ecosystem PR:
-- awesome-opencode PR:
-- opencode.cafe submission:
-- Reddit post:
-- Discord post:
-- X post:
+- npm package: https://www.npmjs.com/package/opencode-model-scorecard
+  - Current published version is `0.1.1`.
+  - `npm view opencode-model-scorecard --json` resolves successfully.
+  - Publishing refreshed README and keyword metadata requires npm auth; local
+    `npm whoami` returned `E401 Unauthorized` on July 4, 2026.
+- GitHub release: https://github.com/bnc4vk/opencode-model-scorecard/releases/tag/v0.1.1
+- CI: https://github.com/bnc4vk/opencode-model-scorecard/actions/runs/28702779222
+- OpenCode ecosystem PR: https://github.com/anomalyco/opencode/pull/35304
+- awesome-opencode PR: https://github.com/awesome-opencode/awesome-opencode/pull/492
+- opencode.cafe submission: https://github.com/R44VC0RP/opencode.cafe/issues/8
+  - Website submission form requires an authenticated browser session, so the
+    submission was filed as a GitHub issue with complete listing details.
+- Reddit post: blocked until a logged-in Reddit account is available.
+- Discord post: blocked until a logged-in OpenCode Discord session is available.
+- X post: blocked until a logged-in X account is available.
