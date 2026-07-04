@@ -8,7 +8,7 @@ OpenCode TUI plugin that shows model benchmark score, token cost, and token
 efficiency directly on the home screen so you can choose models with local
 quality and cost context.
 
-![OpenCode Model Scorecard preview](assets/model-scorecard-preview.svg)
+![OpenCode Model Scorecard running in the OpenCode TUI](assets/opencode-model-scorecard-demo.gif)
 
 The status line stays visible while you work:
 
