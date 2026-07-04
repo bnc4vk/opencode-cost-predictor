@@ -1,1 +1,1 @@
-export { default, tui } from "./.opencode/plugins/cost-predictor-home.tsx";
+export { default, tui } from "./.opencode/plugins/model-scorecard-home.tsx";

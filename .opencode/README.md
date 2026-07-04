@@ -1,4 +1,4 @@
-# OpenCode Cost Predictor Home UI
+# OpenCode Model Scorecard Home UI
 
 This repo contains a project-local OpenCode TUI plugin focused on one form
 factor: a persistent home-screen status line for the currently selected model.
@@ -6,7 +6,7 @@ factor: a persistent home-screen status line for the currently selected model.
 The plugin lives at:
 
 ```text
-.opencode/plugins/cost-predictor-home.tsx
+.opencode/plugins/model-scorecard-home.tsx
 ```
 
 It is enabled by:
@@ -78,5 +78,5 @@ The refresh command rewrites only the generated data arrays in
 For npm distribution, the package exports the TUI plugin at:
 
 ```text
-opencode-cost-predictor/tui
+opencode-model-scorecard/tui
 ```

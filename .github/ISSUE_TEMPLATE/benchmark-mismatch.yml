@@ -1,0 +1,34 @@
+name: Benchmark mismatch
+description: Report benchmark score or token-efficiency data that appears wrong.
+title: "Benchmark mismatch: "
+labels:
+  - data
+  - benchmark
+body:
+  - type: input
+    id: model
+    attributes:
+      label: OpenCode model ID
+      placeholder: "google/gemini-3-pro"
+    validations:
+      required: true
+  - type: textarea
+    id: displayed
+    attributes:
+      label: Displayed benchmark details
+      description: Paste the details dialog output.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Expected score or source row
+      description: Link to the public benchmark row or describe the expected value.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Include any aliasing or provider naming differences that may explain the mismatch.

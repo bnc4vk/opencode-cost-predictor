@@ -14,7 +14,7 @@ import {
 } from "../.opencode/plugins/model-score-data.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
-const homePlugin = path.join(root, ".opencode", "plugins", "cost-predictor-home.tsx");
+const homePlugin = path.join(root, ".opencode", "plugins", "model-scorecard-home.tsx");
 const packageManifest = path.join(root, "package.json");
 const scoreUpdater = path.join(root, "scripts", "update-model-scores.mjs");
 const tuiConfig = path.join(root, ".opencode", "tui.json");
@@ -22,13 +22,13 @@ const tuiConfig = path.join(root, ".opencode", "tui.json");
 test("tui config loads only the persistent home-screen plugin", () => {
   const config = JSON.parse(readFileSync(tuiConfig, "utf8"));
 
-  assert.deepEqual(config.plugin, ["./plugins/cost-predictor-home.tsx"]);
+  assert.deepEqual(config.plugin, ["./plugins/model-scorecard-home.tsx"]);
 });
 
 test("package metadata exposes the npm TUI plugin entrypoint", () => {
   const manifest = JSON.parse(readFileSync(packageManifest, "utf8"));
 
-  assert.equal(manifest.name, "opencode-cost-predictor");
+  assert.equal(manifest.name, "opencode-model-scorecard");
   assert.deepEqual(manifest["oc-plugin"], ["tui"]);
   assert.equal(manifest.exports["./tui"], "./tui.tsx");
   assert.equal(manifest.scripts["update:scores"], "node scripts/update-model-scores.mjs");
@@ -57,7 +57,7 @@ test("home-screen plugin renders model benchmark stats without prompt intercepti
   assert.match(source, /watch\(modelStateFile/u);
   assert.match(source, /setInterval\(refreshScoreSummary, 1000\)/u);
   assert.match(source, /Show model benchmark details/u);
-  assert.match(source, /cost-predictor\.model-benchmark/u);
+  assert.match(source, /model-scorecard\.model-benchmark/u);
   assert.match(source, /scoreSummary\(\)/u);
   assert.doesNotMatch(source, /home_prompt/u);
   assert.doesNotMatch(source, /session_prompt/u);

@@ -36,9 +36,9 @@ export const tui = async (api) => {
   const unregisterCommand = api.command?.register(() => [
     {
       title: "Show model benchmark details",
-      value: "cost-predictor.model-benchmark",
+      value: "model-scorecard.model-benchmark",
       description: "Show Terminal-Bench harnesses, token cost, and token efficiency for the current model.",
-      category: "Cost Predictor",
+      category: "Model Scorecard",
       onSelect(dialog) {
         const stack = dialog ?? api.ui.dialog;
         stack.replace(
@@ -73,6 +73,6 @@ export const tui = async (api) => {
 };
 
 export default {
-  id: "cost-predictor.home",
+  id: "model-scorecard.home",
   tui,
 };

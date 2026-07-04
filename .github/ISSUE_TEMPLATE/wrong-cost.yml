@@ -1,0 +1,35 @@
+name: Wrong token cost
+description: Report token prices that appear stale or incorrect.
+title: "Wrong token cost: "
+labels:
+  - data
+  - pricing
+body:
+  - type: input
+    id: model
+    attributes:
+      label: OpenCode model ID
+      placeholder: "openai/gpt-5.1"
+    validations:
+      required: true
+  - type: input
+    id: displayed-cost
+    attributes:
+      label: Displayed cost
+      placeholder: "$1.25 / $10.00 per 1M"
+    validations:
+      required: true
+  - type: input
+    id: expected-cost
+    attributes:
+      label: Expected cost
+      placeholder: "$1.00 / $8.00 per 1M"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+      description: Link to the provider or OpenCode Data row that shows the expected price.
+    validations:
+      required: true

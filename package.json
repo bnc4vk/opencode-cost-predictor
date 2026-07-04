@@ -1,5 +1,5 @@
 {
-  "name": "opencode-cost-predictor",
+  "name": "opencode-model-scorecard",
   "version": "0.1.1",
   "description": "OpenCode TUI plugin that displays local benchmark scores, token costs, and token efficiency on the home screen.",
   "private": false,
@@ -8,17 +8,25 @@
   "keywords": [
     "opencode",
     "opencode-plugin",
+    "opencode-tui",
     "tui",
+    "tui-plugin",
+    "model-score",
     "model-benchmarks",
+    "model-cost",
+    "llm-benchmark",
+    "terminal-bench",
+    "artificial-analysis",
+    "token-cost",
     "coding-agent"
   ],
-  "homepage": "https://github.com/bnc4vk/opencode-cost-predictor#readme",
+  "homepage": "https://github.com/bnc4vk/opencode-model-scorecard#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bnc4vk/opencode-cost-predictor.git"
+    "url": "git+https://github.com/bnc4vk/opencode-model-scorecard.git"
   },
   "bugs": {
-    "url": "https://github.com/bnc4vk/opencode-cost-predictor/issues"
+    "url": "https://github.com/bnc4vk/opencode-model-scorecard/issues"
   },
   "exports": {
     ".": "./tui.tsx",
@@ -30,6 +38,7 @@
   "files": [
     ".opencode/plugins",
     ".opencode/README.md",
+    "assets",
     "CHANGELOG.md",
     "LICENSE",
     "README.md",

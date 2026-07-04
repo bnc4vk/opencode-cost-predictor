@@ -1,0 +1,33 @@
+name: Missing model data
+description: Report a model that should resolve but currently shows n/a or incomplete data.
+title: "Missing model data: "
+labels:
+  - data
+  - missing-model
+body:
+  - type: input
+    id: model
+    attributes:
+      label: OpenCode model ID
+      description: Copy the exact provider/model ID shown in OpenCode.
+      placeholder: "anthropic/claude-sonnet-4.5"
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Scorecard output
+      description: Paste the status line or details dialog output.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: expected-source
+    attributes:
+      label: Expected public source
+      description: Link to a Terminal-Bench, Artificial Analysis, or OpenCode Data row if you have one.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include provider aliases, model picker labels, or related model IDs.
